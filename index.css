@@ -57,42 +57,35 @@ body {
 .nav-main ul, .nav-secondary ul {
     list-style: none;
     margin: 10px 0;
-}
-
-.nav-main li,.nav-secondary li {
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.nav-main li:hover,.nav-secondary li:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding-left: 10px;
-    border-radius: 5px;
-}
-
-.nav-main li img,
-.nav-secondary li img {
-    height: 20px;
-    width: auto;
-    margin-right: 10px;
+    padding: 0;
 }
 
 .nav-main li,
 .nav-secondary li {
     font-size: 15px;
-    padding: 12px 5px;
+    padding: 12px 8px;
     cursor: pointer;
+    border-radius: 5px;
     display: grid;
-    grid-template-columns: 30px 1fr;
+    grid-template-columns: 24px 1fr;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
+}
+
+.nav-main li:hover,
+.nav-secondary li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav-main li img,
-.nav-secondary li img,
+.nav-secondary li img {
+    width: 24px;
+    height: 24px;
+    justify-self: center;
+}
+
 .logo img {
-    width: 28px;  
+    width: 28px;
     height: 28px;
 }
 
